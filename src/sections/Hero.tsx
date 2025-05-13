@@ -4,7 +4,7 @@ import HeroImage from "@/assets/hero.jpg";
 
 const Hero = () => {
 	return (
-		<section className="pt-5 px-4 max-w-7xl fcontainer">
+		<section className="pt-7 px-4 max-w-7xl fcontainer">
 			<div className="md:flex justify-center ">
 				<div className="flex items-center fcontainer md:h-[400px]">
 					<div>
@@ -12,11 +12,11 @@ const Hero = () => {
 							Bring a <span className="text-yellow-500 flex">remote team</span>{" "}
 							together
 						</h1>
-						<p className="mt-4 opacity-50">
+						<p className="py-4 text-sm font-semibold opacity-50">
 							Connect, collaborate, and conquer remotely <br /> with TeamApp.
 						</p>
 						<div>
-							<form action="" className="pt-4">
+							<form action="" className="pt-4 z-0">
 								<input
 									required
 									type="email"
@@ -33,7 +33,11 @@ const Hero = () => {
 						</div>
 					</div>
 				</div>
-				<Image src={HeroImage} className="scale-125 pt-10" alt="Hero" />
+				<Image
+					src={HeroImage}
+					className="scale-125 pt-10 sm:absolute md:static -z-10"
+					alt="Hero"
+				/>
 			</div>
 		</section>
 	);
