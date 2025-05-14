@@ -6,6 +6,10 @@ export const content = [
 	"./src/components/**/*.{js,ts,jsx,tsx}",
 ];
 export const theme = {
-	extend: {},
+	extend: {
+		colors: {
+			mustard: "#F2EFE8",
+		},
+	},
 };
 export const plugins = [];

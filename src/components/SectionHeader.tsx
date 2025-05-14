@@ -1,14 +1,20 @@
-const SectionHeader = (props: {
+import { ReactNode } from "react";
+
+const SectionHeader = ({
+	tagline,
+	heading,
+	body,
+	children,
+}: {
 	tagline: string;
 	heading: string;
-	body: string;
+	body?: string;
+	children?: ReactNode;
 }) => {
-	const { tagline, heading, body } = props;
-
 	return (
 		<div className="fcontainer text-center">
 			<div className=" flex justify-center">
-				<p className="text-xs font-extrabold text-yellow-300 uppercase">
+				<p className="text-xs font-bold text-yellow-500 uppercase tracking-widest">
 					| {tagline}
 				</p>
 			</div>
@@ -23,6 +29,8 @@ const SectionHeader = (props: {
 					{body}
 				</p>
 			</div>
+
+			{children}
 		</div>
 	);
 };

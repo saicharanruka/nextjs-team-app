@@ -8,7 +8,7 @@ const Hero = () => {
 			<div className="md:flex justify-center ">
 				<div className="flex items-center fcontainer md:h-[400px]">
 					<div>
-						<h1 className="text-5xl font-bold max-w-md">
+						<h1 className="text-5xl font-bold w-fit">
 							Bring a <span className="text-yellow-500 flex">remote team</span>{" "}
 							together
 						</h1>
@@ -35,7 +35,7 @@ const Hero = () => {
 				</div>
 				<Image
 					src={HeroImage}
-					className="scale-125 pt-10 sm:absolute md:static -z-10"
+					className="scale-125 pt-10 sm:opacity-0 md:opacity-100 -z-10"
 					alt="Hero"
 				/>
 			</div>
