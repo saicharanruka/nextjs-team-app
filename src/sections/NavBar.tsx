@@ -26,7 +26,9 @@ const NavBar = () => {
 					</div>
 					<div className="flex justify-center items-center">
 						<a className="p-2 text-xs font-medium mr-2">Login</a>
-						<a className="p-2 text-xs font-medium">Sign Up</a>
+						<a className="px-4 py-2 text-xs font-medium border rounded-full">
+							Sign Up
+						</a>
 					</div>
 				</div>
 			</div>
