@@ -6,7 +6,7 @@ const Hero = () => {
 	return (
 		<section className="pt-7 px-4 max-w-7xl fcontainer">
 			<div className="md:flex justify-center ">
-				<div className="flex items-center fcontainer md:h-[400px]">
+				<div className="flex items-center container md:h-[400px] pt-20 px-5">
 					<div>
 						<h1 className="text-5xl font-bold w-fit">
 							Bring a <span className="text-yellow-500 flex">remote team</span>{" "}
@@ -35,7 +35,7 @@ const Hero = () => {
 				</div>
 				<Image
 					src={HeroImage}
-					className="scale-125 pt-10 sm:opacity-0 md:opacity-100 -z-10"
+					className="scale-100 sm:hidden md:block -z-10"
 					alt="Hero"
 				/>
 			</div>
